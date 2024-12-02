@@ -30,8 +30,11 @@ class Example(QWidget):
         self.update()
 
     def draw_flag(self, qp):
-        qp.setBrush(QColor(255, 255, 0))
         for i in range(8):
+            color_1 = randint(0, 255)
+            color_2 = randint(0, 255)
+            color_3 = randint(0, 255)
+            qp.setBrush(QColor(color_1, color_2, color_3))
             x_c = randint(0, 500)
             y_c = randint(0, 400)
             radius = randint(0, 200)
